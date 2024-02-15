@@ -17,5 +17,7 @@ class ProdConfig(Config):
 
 
 class TestConfig(Config):
-    pass
+    SQLALCHEMY_DATABASE_URI='sqlite:///:memory:'
+    SQLALCHEMY_ECHO=False
+    TESTING=True
 
